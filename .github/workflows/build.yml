@@ -44,7 +44,7 @@ jobs:
       with:
         name: artifacts
         path: |
-          target
+          target/xbindkeys-config-gtk
           AUTHORS
           LICENSE.md
           README.md
