@@ -5,4 +5,4 @@
 
 /* Set the pat tu xbinkeys program */
 
-#define XBINDKEYS_PATCH "xbindkeys" /* Change this only for debbuging */
+#define XBINDKEYS_PATCH          "xbindkeys" /* Change this only for debbuging */

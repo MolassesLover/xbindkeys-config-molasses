@@ -7,13 +7,13 @@
 ***************************************************************************/
 
 /***************************************************************************
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- ***************************************************************************/
+*                                                                         *
+*   This program is free software; you can redistribute it and/or modify  *
+*   it under the terms of the GNU General Public License as published by  *
+*   the Free Software Foundation; either version 2 of the License, or     *
+*   (at your option) any later version.                                   *
+*                                                                         *
+***************************************************************************/
 
 #include <gtk/gtk.h>
 
@@ -28,6 +28,6 @@ void view_generated_file();
 void undo();
 void set_default();
 void selectable_clist(gboolean state);
-void main_exit(); 
+void main_exit();
 
 void middle_apply_action(GtkWidget *parent, void *data);
