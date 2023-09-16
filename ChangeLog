@@ -1,7 +1,11 @@
-xbindkeys_config changelog by Radoslav Georgiev <rgeorgiev583@gmail.com> and Laurent Vuibert <lapinator@gmx.fr>
-
+xbindkeys_config changelog by Radoslav Georgiev <rgeorgiev583@gmail.com>, Laurent Vuibert <lapinator@gmx.fr>, and MolassesLover
 
 version:
+0.2.0-molasses:
+	Add: CMake support
+	Remove: Makefile support
+	Add: Dockerfile
+	Add: Uncrustify code formatting
 
 0.1.4:
 	Fix: make the build work with GTK2 and the latest versions of GCC and GNU ld
