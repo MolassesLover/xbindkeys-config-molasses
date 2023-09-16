@@ -1,0 +1,40 @@
+name: Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+      security-events: write
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: recursive
+    
+    - name: Install dependencies
+      run: |
+        sudo apt-get update -y
+        sudo apt-get install -y \
+          cmake \
+          clang \
+          ninja-build \
+          libgtk2.0-dev
+
+    - name: Build
+      run: |
+        cmake \
+          -B target/release \
+          -D CMAKE_BUILD_TYPE=Release \
+          -G 'Ninja'
+        cmake --build target/release -j$(nproc)
