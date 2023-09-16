@@ -38,3 +38,13 @@ jobs:
           -D CMAKE_BUILD_TYPE=Release \
           -G 'Ninja'
         cmake --build target/release -j$(nproc)
+
+    - name: Archive artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: artifacts
+        path: |
+          target
+          AUTHORS
+          LICENSE.md
+          README.md
